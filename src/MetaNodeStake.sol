@@ -53,7 +53,7 @@ AccessControlUpgradeable
         uint256 stTokenAmount;
         // Min staking amount
         uint256 minDepositAmount;
-        // Withdraw locked blocks
+        // Withdraw locked blocks 需要锁定的块数
         uint256 unstakeLockedBlocks;
     }
 
@@ -85,10 +85,10 @@ AccessControlUpgradeable
 
     // Pause the withdraw function
     bool public withdrawPaused;
-    // Pause the claim function
+    // Pause the claim function 暂停标记，为了安全
     bool public claimPaused;
 
-    // MetaNode token
+    // MetaNode token 这就是奖励的token，需要在初始化时候就设定好，以后就固定那么多，不能增加，只能发放
     IERC20 public MetaNode;
 
     // Total pool weight / Sum of all pool weights
