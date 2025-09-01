@@ -75,6 +75,7 @@ withdraw(pid)
 管理员可随时 暂停/恢复 质押、解锁、领奖
 合约使用 UUPS 可升级模式，只有 UPGRADE_ROLE 能升级逻辑
 
+
 ## 5 部署脚本
 ```shell
 source .env
@@ -85,5 +86,3 @@ forge script script/DeployMetaNodeStake.s.sol:DeployMetaNodeStake \
   --verify \
   --etherscan-api-key $ETHERSCAN_KEY
 ```
-
-forge script script/DeployMetaNodeStake.s.sol:DeployMetaNodeStake --rpc-url "https://eth-sepolia.g.alchemy.com/v2/tSzwaEyy5RSW69g3GlBbi" --private-key "e98cb1789d5f672c5c2f019e993f537ba0a76ab5c21f70d006dcef0004c71368" --broadcast --verify --etherscan-api-key "WYHY5I36N3PZBB82KRWZWBX6PJUWHZ4ADP"
